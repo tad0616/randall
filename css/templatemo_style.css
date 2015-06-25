@@ -1,0 +1,591 @@
+/*
+Credit: http://www.templatemo.com
+*/
+
+body {
+	background-image: url(../images/bg/bg-body.jpg);/*背景底圖*/
+}
+
+#bg_body{
+  background-image: url(../images/bg-pattern.jpg);/*背景底圖*/
+  height: 1318px;
+}
+
+a, a:link, a:visited {
+	color: #000;
+	font-weight: normal;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a.more {
+	display: block;
+	margin-top: 20px;
+	width: 79px;
+	height: 27px;
+	line-height: 27px;
+	text-align: center;
+	color: #75a62c;
+	background: url(../images/templatemo_more.jpg) no-repeat;
+}
+
+p { margin: 0 0 10px 0; padding: 0;	border-radius: 5px;}
+img { border: none; }
+blockquote { font-style: italic; margin: 0 0 0 10px;}
+cite { font-weight: bold; color:#333; }
+cite a, cite a:link, cite a:visited  { font-size: 12px; text-decoration: none; font-style: normal }
+cite span { font-weight: 400; color: #666; }
+em { color: #333; }
+
+h1, h2, h3, h4, h5, h6 { color: #333; font-weight: normal; }
+h1 { font-size: 48px; margin: 0 0 30px; padding: 5px 0 }
+h2 { font-size: 24px; margin: 0 0 25px; padding: 10px; }
+h3 { font-size: 20px; margin: 0 0 20px; padding: 0; }
+h4 { font-size: 18px; margin: 0 0 15px; padding: 0; }
+h5 { font-size: 16px; margin: 0 0 10px; padding: 0;  }
+h6 { font-size: 12px; margin: 0 0 5px; padding: 0; }
+
+.cleaner { clear: both }
+.h10 { height: 10px }
+.h20 { height: 20px }
+.h30 { height: 30px }
+.h40 { height: 40px }
+.h50 { height: 50px }
+.hr_divider { display: block; margin-bottom: 40px; padding-bottom: 40px; background: url(../images/templatemo_hr_divider.png) bottom repeat-x  }
+
+.float_l { float: left }
+.float_r { float: right }
+
+.image_fl {
+	float: left;
+	margin: 3px 30px 0 0;
+}
+
+.image_fr {
+	float: right;
+	margin: 3px 0 0 30px;
+}
+
+.templatemo_list {
+	list-style: decimal-leading-zero;
+	padding: 0 0 0 15px;
+	margin: 0 0 0 15px;
+}
+
+.templatemo_list li {
+	color:#595858;
+	margin-bottom: 8px;
+}
+
+.templatemo_list li a {
+	color: #595858;
+	font-weight: normal;
+	font-size: 12px;
+	text-decoration: none;
+}
+
+.templatemo_list li a:hover {
+	text-decoration: underline;
+}
+
+#templatemo_wrapper {
+	width: 964px;
+	margin: 0px auto;
+}
+
+#templatemo_header {
+	/*height: 150px;*/
+}
+#randall_logo{
+  float: left;/*設定此容器向左邊浮動*/
+  /*width: 200px;設定此容器的寬度*/
+ /*height: 150px;設定此容器的高度*/
+  /*line-height: 150px;設定行間的距離*/
+  /*若容器內的文字只有一行，則可使用height再配合line-height設定使文字垂直置中*/
+}
+#site_name{
+  color: #fff;/*設定容器內的字體顏色*/
+  /*float: right;設定此容器向右邊浮動*/
+  /*width: 660px;*/
+  font-size: 40px;/*設定字型大小*/
+  height: 35px;
+  line-height: 35px;/**/
+  padding-top: 10px;
+}
+
+#site_slogan{
+  /*float: left;
+  width: 660px;*/
+  font-size: 24px;
+  height: 35px;
+  line-height: 35px;
+}
+
+
+
+#templatemo_main {
+	clear: both;
+	min-height: 600px;
+}
+
+#templatemo_slider_wrapper {
+	padding: 0 2px;
+}
+
+#slider {
+	position:relative;
+	border-radius: 5px;
+}
+
+#slider img {
+	position:absolute;
+	top:0px;
+	left:0px;
+	display:none;
+}
+
+#slider a {
+	border:0;
+	display:block;
+}
+
+.nivo-controlNav {
+	position:absolute;
+}
+
+.nivo-controlNav a {
+	display:block;
+	text-indent: -9999px;
+	border:0;
+	margin-right:3px;
+	float:left;
+}
+
+.nivo-controlNav a.active {
+}
+
+.nivo-directionNav a {
+	display:block;
+	width:30px;
+	height:30px;
+	background:url(../images/arrows.png) no-repeat;
+	text-indent:-9999px;
+	border:0;
+}
+
+a.nivo-nextNav {
+	background-position:-30px 0;
+	right:15px;
+}
+
+a.nivo-prevNav {
+	left:15px;
+}
+
+.nivo-caption {
+    text-shadow:none;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.nivo-caption p { font-size: 12px }
+
+.nivo-caption a {
+		color:#efe9d1;
+		text-decoration:underline;
+}
+
+#templatemo_main h1 {
+	color: #000;
+	font-size: 2em;
+	padding: 20px 10px;
+}
+
+#templatemo_main h2 {
+	color: #000;
+	font-size: 1.2em;
+	padding: 10px;
+}
+
+.testimonial {
+	padding: 0 0 0 50px;
+	display: block;
+	background: url(../images/testimonial.png) left top no-repeat;
+}
+
+.col_2 { width: 430px; padding-right: 30px }
+.col_3 { float: left; width: 290px ; margin-right: 25px }
+.col_4 { float: left; width: 215px; margin-right: 20px }
+.col_b { width: 700px }
+.col_l { margin: 0 }
+
+.fp_h3 {
+	font-size: 18px;
+	font-weight: 700;
+	line-height: normal;
+	margin-bottom: 10px;
+}
+
+.post_box {
+	clear: both;
+	margin-bottom: 60px;
+}
+
+.post_box h2 {
+	font-size: 20px;
+	font-weight: 400;
+	margin-bottom: 15px;
+}
+
+.post_box img {
+	float: left;
+	margin-right: 20px;
+}
+
+.post_text {
+	float: left;
+	width: 360px;
+}
+.post_meta {
+	float: right;
+	width: 200px;
+}
+
+.post_meta ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.post_meta ul li {
+	margin: 0 0 10px;
+	padding: 0 0 10px;
+	border-bottom: 1px solid #ccc;
+}
+
+#comment_section {
+	clear: both;
+	margin-bottom: 60px;
+	width: 670px;
+}
+
+.first_level {
+	margin: 0; padding: 0;
+}
+
+.comments {
+	list-style: none;
+}
+
+.comments li {
+	margin-bottom: 10px;
+	list-style:none;
+}
+
+.comments li .commentbox1 {
+	border: 1px solid #ccc;
+}
+
+.comments li .commentbox2 {
+	border: 1px solid #ccc;
+}
+
+.comments li .comment_box {
+	clear: both;
+	width:100%;
+	padding: 20px;
+}
+
+.comment_box .gravatar {
+	float: right;
+	background: #000;
+}
+
+.comment_box .gravatar img {
+	margin: 0;
+	width: 80px;
+	height: 80px;
+}
+
+.comment_box .comment_text {
+	margin: 0 120px 0 0;
+}
+
+.comment_box .comment_text p {
+	margin: 0;
+}
+
+.comment_text .comment_author {
+	font-size: 14px;
+	font-weight: bold;
+	color: #000;
+	margin-bottom: 10px;
+}
+
+.comment_text .date {
+	font-size: 12px;
+	font-weight: normal;
+	color: #000;
+	padding-left: 10px;
+}
+
+.comment_text .time {
+	font-size: 12px;
+	font-weight: normal;
+	color: #000;
+	padding-left: 10px;
+}
+
+.comment_text .reply a {
+	display: block;
+	clear: both;
+	float: left;
+	margin-top: 10px;
+	color: #000;
+	font-weight: 700;
+}
+
+#comment_form {
+	clear: both;
+}
+
+#comment_form h3 {
+	font-size: 20px;
+	border-bottom: 1px dotted #666;
+	margin-bottom: 15px;
+	padding-bottom: 10px;
+}
+
+#comment_form form {
+	padding: 20px;
+	background-color: #eee;
+	border: 1px solid #ccc;
+}
+
+#comment_form textarea {
+	background:#FFFFFF none repeat fixed 0 0;
+	border: 1px solid #CCC;
+	height:150px;
+	padding:5px;
+	width: 360px;
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 12px;
+	margin-top: 5px;
+}
+
+#comment_form .form_row {
+	width: 100%;
+	margin-bottom: 15px;
+}
+
+#comment_form form input {
+	padding: 5px;
+	width: 230px;
+	background:#FFFFFF none repeat fixed 0 0;
+	border: 1px solid #CCC;
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 12px;
+	margin-top: 5px;
+}
+
+#comment_form .submit_btn {
+	width: 80px;
+	height: 30px;
+	color: #000;
+	background: #f4f6f9;
+	border: 1px solid #d3dae3;
+}
+
+.pagging {
+	margin: 0 0 20px;
+	padding: 0;
+}
+
+.pagging ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.pagging ul li {
+	margin: 0;
+	padding: 0;
+	display: inline;
+}
+
+.pagging ul li a {
+	float: left;
+	display: block;
+	color: #333;
+	text-decoration: none;
+	margin-right: 5px;
+	padding: 5px 10px;
+	background-color: #ddd;
+	border: 1px solid #ccc;
+}
+
+.pagging ul li a:hover {
+	background: #a4d659;
+	border: 1px solid #666;
+	color: #000;
+}
+
+#contact_form {
+	padding: 0;
+	width: 400px;
+}
+
+#contact_form form {
+	margin: 0px;
+	padding: 0px;
+}
+
+#contact_form form .input_field {
+	width: 270px;
+	padding: 5px;
+	color: #222;
+	background: #f4f6f9;
+	border: 1px solid #d3dae3;
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 12px;
+	margin-top: 5px;
+}
+
+#contact_form form label {
+	display: block;
+	width: 100px;
+	margin-right: 12px;
+	font-size: 13px;
+}
+
+#contact_form form textarea {
+	width: 388px;
+	height: 180px;
+	padding: 5px;
+	color: #222;
+	background: #f4f6f9;
+	border: 1px solid #d3dae3;
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 12px;
+	margin-top: 5px;
+}
+
+#contact_form form .submit_btn {
+	padding: 5px 14px;
+	color: #222;
+	background: #f4f6f9;
+	border: 1px solid #d3dae3;
+	font-size:14px;
+	margin: 10px 0px;
+}
+
+#templatemo_footer {
+  width: 960px;
+  border-radius: 5px;/*設定圖片四個角的型狀*/
+  margin: 0px auto;
+  height: 150px;
+  line-height: 3;/*設定行高*//*若*/
+  color: #6A5ACD;
+  font-size: 1.2em;
+  text-align: center;/*設定容器內的文字置中*/
+}
+
+#templatemo_footer em {
+	color: #ccc;
+}
+
+#templatemo_footer h5 {
+	color: #ccc;
+	font-size: 16px;
+	font-weight: 700;
+	margin-bottom: 20px;
+}
+
+.footer_list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.footer_list li {
+	margin: 0 0 10px;
+	padding: 0 0 7px;
+	border-bottom: 1px dashed #000;
+}
+
+.footer_list li a {
+	color: #ccc;
+	text-decoration: none;
+}
+
+.footer_list li a:hover {
+	text-decoration: underline;
+}
+
+.rp_box {
+	clear: both;
+	margin-bottom: 20px;
+	padding-bottom: 20px;
+	border-bottom: 1px dashed #000;
+}
+
+.rp_box img {
+	float: left;
+	margin-right: 20px;
+	border: 4px solid #212121;
+}
+
+.rp_box a {
+	text-decoration: none;
+	color: #888;
+}
+
+.date {
+	font-style: italic;
+	font-size: 12px;
+	margin-bottom: 5px;
+	color: #666;
+}
+
+.twitter_post {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.twitter_post li {
+	margin: 0 0 20px;
+	padding: 0 0 20px;
+	border-bottom: 1px dashed #2d261a;
+}
+
+.twitter_post li a {
+	color: #ccc;
+}
+
+.footer_social_button {
+	clear: both;
+	margin-top: 20px;
+}
+
+.footer_social_button a {
+	margin-right: 5px;
+}
+
+#templatemo_cr_bar_wrapper {
+	width: 100%;
+	border-top: 1px solid #494949;
+	background: #161616
+}
+
+#templatemo_cr_bar {
+	width: 960px;
+	margin: 0 auto;
+	padding: 15px 10px;
+	color: #666;
+	text-align: center
+}
+
+#templatemo_cr_bar a { color: #888 }

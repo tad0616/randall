@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="<{$xoops_langcode}>">
+<head>
+    <{assign var=theme_name value=$xoTheme->folderName}>
+    <!--載入tadtools佈景變數的樣版檔-->
+    <{includeq file="$xoops_rootpath/modules/tadtools/themes_common/get_var.html"}>
+
+<meta charset="<{$xoops_charset}>">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="<{$xoops_meta_robots}>" />
+<meta name="keywords" content="<{$xoops_meta_keywords}>" />
+<meta name="description" content="<{$xoops_meta_description}>" />
+<meta name="rating" content="<{$xoops_meta_rating}>" />
+<meta name="author" content="<{$xoops_meta_author}>" />
+<meta name="copyright" content="<{$xoops_meta_copyright}>" />
+<meta name="generator" content="XOOPS" />
+
+<title><{$xoops_sitename}> - <{$xoops_pagetitle}></title>
+
+<!-- Rss -->
+<link rel="alternate" type="application/rss+xml" title="" href="<{xoAppUrl backend.php}>" />
+
+<!-- Favicon -->
+<link rel="shortcut icon" type="image/ico" href="<{xoImgUrl icons/favicon.ico}>" />
+<link rel="icon" type="image/png" href="<{xoImgUrl icons/favicon.png}>" />
+
+<!-- Sheet Css -->
+<link rel="stylesheet" type="text/css" media="all" title="Style sheet" href="<{xoAppUrl xoops.css}>" />
+<link href="<{xoImgUrl css/templatemo_style.css}>" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" type="text/css" media="all" title="Style sheet" href="<{xoImgUrl css/xoops.css}>" />
+
+<!-- Bootstrap -->
+<link href="<{xoAppUrl modules/tadtools/bootstrap/css/bootstrap.css}>" rel="stylesheet" media="screen">
+<link rel="stylesheet" href="<{xoImgUrl css/nivo-slider.css}>" type="text/css" media="screen" />
+
+
+<style type="text/css">
+  body{
+    color:<{$font_color}>;
+    font-size:<{$font_size}>;
+  }
+
+  #templatemo_main{
+    background-color: rgba(255,255,255,0.8);
+  }
+
+  #templatemo_footer {
+    background-image: url(<{$footer_img}>);
+  }
+
+  a{
+    color:<{$link_color}>;
+  }
+
+  a:hover{
+    color:<{$hover_color}>;
+  }
+
+  <{if $navbar==1}>
+    /*載入tadtools中將佈景設定中導覽工具列設定值顯示在網頁上的樣版檔*/
+    <{includeq file="$xoops_rootpath/modules/tadtools/themes_tpl/theme_css_navbar.html"}>
+  <{/if}>
+
+  /*載入tadtools中區塊的樣版檔*/
+  <{includeq file="$xoops_rootpath/modules/tadtools/themes_tpl/theme_css_blocks.html"}>
+
+
+</style>
+
+<!-- customized header contents -->
+<{$xoops_module_header}>
+
+
+<script type='text/javascript'>
+  if(typeof jQuery == 'undefined') {
+  document.write("<script type='text/javascript' src='<{xoAppUrl modules/tadtools/jquery/jquery.js}>'><\/script>");
+  }
+</script>
+
+</head>
+<body>
+  <div id="bg_body">
+    <div id="templatemo_wrapper">
+      <div id="templatemo_header">
+        <!--自制logo開始-->
+          <{includeq file="$theme_name/includeq/wnmhi_logo.html"}>
+        <div class="cleaner"></div>
+      </div> <!-- end of header -->
+
+      <!--導覽列開始-->
+      <{if $navbar==1}>
+        <!--載入tadtools導覽列共用樣版檔-->
+        <{includeq file="$xoops_rootpath/modules/tadtools/themes_tpl/navbar.html"}>
+      <{else}>
+        <!--載入wnmhi自制導覽列樣版檔-->
+        <{includeq file="$xoops_rootpath/modules/tadtools/themes_tpl/menu/menu.html"}>
+      <{/if}>
+
+      <!--導覽列結束-->
+
+      <!--滑動圖片展示區開始-->
+        <{includeq file="$theme_name/includeq/slide_picture.html"}>
+      <!--滑動圖片展示區結束-->
+
+      <!--主內容區開始-->
+      <div id="templatemo_main">
+        <!--載入tadtools中切換版面布局的樣版檔-->
+        <{includeq file="$xoops_rootpath/modules/tadtools/themes_tpl/$theme_type.html"}>
+      </div>
+      <!--主內容區結束-->
+
+      <!--尾頁區開始-->
+      <div id="templatemo_footer">
+          <!--頁尾區-->
+          <{$xoops_footer}>
+        <div class="cleaner"></div>
+      </div>
+      <!--尾頁區結束-->
+    </div>
+
+    <{if  $show_var==1}>
+      <!--載入tadtools中可顯示佈景變數名稱及設定值的樣版檔-->
+      <{includeq file="$xoops_rootpath/modules/tadtools/themes_tpl/show_var.html"}>
+    <{/if}>
+  </div>
+
+  <!--載入tadtools中可自由調整版面高度的樣版檔-->
+  <{includeq file="$xoops_rootpath/modules/tadtools/themes_tpl/my_js.html"}>
+  <script src="<{xoAppUrl modules/tadtools/bootstrap/js/bootstrap.min.js}>"></script>
+
+</body>
+</html>
