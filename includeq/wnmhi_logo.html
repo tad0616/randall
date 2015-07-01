@@ -1,21 +1,8 @@
 
 <div id="randall_logo">
   <{if $logo_img}>
-    <a href='<{xoAppUrl index.php}>'><img src="<{$logo_img}>" alt="<{$xoops_sitename}>" title="<{$smarty.const.WMNHI_USER_LOGO}>"></a>
+    <a href="<{$xoops_url}>"><img src="<{$logo_img}>" alt="<{$xoops_sitename}>" style="z-index: 100; position: relative;"></a>
   <{else}>
-    <a href='<{xoAppUrl index.php}>'><img src="<{xoImgUrl images/Laugh.jpg}>" alt="<{$xoops_sitename}>" title="<{$smarty.const.WMNHI_USER_LOGO}>" class="img-circle"></a>
+    <a href="<{$xoops_url}>"><h1 style="<{$sitename_style}>"><{$xoops_sitename}></h1></a>
   <{/if}>
 </div>
-<div id="site_name" style="<{$sitename_style}>"><{$xoops_sitename}></div>
-
-<{xoMemberInfo assign=mem}>
-<{xoInboxCount assign=pmcount}>
-<{if $xoops_isuser}>
-  <{if $mem.name}>
-    <div id="site_slogan" style="<{$slogan_style}>"><{$mem.name}><{$smarty.const.WMNHI_HELLO}></div>
-  <{else}>
-    <div id="site_slogan" style="<{$slogan_style}>"><{$mem.uname}><{$smarty.const.WMNHI_HELLO}></div>
-  <{/if}>
-<{else}>
-  <div id="site_slogan" style="<{$slogan_style}>"><{$xoops_slogan}></div>
-<{/if}>

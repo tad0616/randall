@@ -12,7 +12,7 @@ $theme_kind_arr = 'html';
 $menu_var_kind = 'all';
 
 //額外顏色設定 如： bootstrap3/themes/light/Cerulean
-$theme_color = '';
+$theme_color = 'bootstrap';
 
 /*
 tabs-1 版面基礎設定
@@ -192,13 +192,13 @@ $config_tabs[6] = 1;
 $config_enable['navbar_pos'] = array('enable' => '0', 'min' => '', 'max' => '', 'require' => '0', 'default' => 'default');
 
 //導覽工具列 漸層顏色(top)[theme_css_navbar.html]
-$config_enable['navbar_bg_top'] = array('enable' => '0', 'min' => '', 'max' => '', 'require' => '0', 'default' => 'transparent');
+$config_enable['navbar_bg_top'] = array('enable' => '1', 'min' => '', 'max' => '', 'require' => '0', 'default' => 'transparent');
 
 //導覽工具列 漸層顏色(bottom)[theme_css_navbar.html]
-$config_enable['navbar_bg_bottom'] = array('enable' => '0', 'min' => '', 'max' => '', 'require' => '0', 'default' => 'transparent');
+$config_enable['navbar_bg_bottom'] = array('enable' => '1', 'min' => '', 'max' => '', 'require' => '0', 'default' => '#00a8ab');
 
 //導覽工具列 連結區塊底色[theme_css_navbar.html]
-$config_enable['navbar_hover'] = array('enable' => '0', 'min' => '', 'max' => '', 'require' => '0', 'default' => 'transparent');
+$config_enable['navbar_hover'] = array('enable' => '1', 'min' => '', 'max' => '', 'require' => '0', 'default' => '#00787b');
 
 //上傳導覽列背景圖[navbar.html]，值：可指定置於「themes/佈景/images/nav_bg/」下的某一檔案名稱
 $config_enable['navbar_img'] = array('enable' => '0', 'min' => '', 'max' => '', 'require' => '0', 'default' => '');

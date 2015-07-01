@@ -28,7 +28,7 @@ $theme_config[$i]['name']    = "sitename_style";
 $theme_config[$i]['text']    = WMNHI_SITENAME_FONT_FAMILY;
 $theme_config[$i]['desc']    = WMNHI_SITENAME_FONT_FAMILY_DESC;
 $theme_config[$i]['type']    = "textarea";
-$theme_config[$i]['default'] = "";
+$theme_config[$i]['default'] = "color: white; margin: 20px 0px;";
 
 //網站口號內容樣式設定
 $i++;

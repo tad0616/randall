@@ -4,7 +4,7 @@
   <{if $slider_var}>
     <div id="slider" class="nivoSlider">
         <{foreach from=$slider_var item=wnmhi}>
-        <a href=""><img src="<{$wnmhi.file_url}>" alt="<{$xoops_sitename}>" title="<{$wnmhi.text_description}>" style="border-radius:5px"/></a>
+            <a href=""><img src="<{$wnmhi.file_url}>" alt="<{$xoops_sitename}>" title="<{$wnmhi.text_description}>" style="border-radius:5px"/></a>
        <{/foreach}>
     </div>
   <{else}>
@@ -16,21 +16,11 @@
     </div>
   <{/if}>
 
-
-
-
 </div>
 
-<script type='text/javascript'>
- if(typeof jQuery == 'undefined') {
- document.write("<script type='text/javascript' src='<{xoAppUrl modules/tadtools/jquery/jquery.js}>'><\/script>");
- }
-</script>
 <script type="text/javascript" src="<{xoImgUrl js/jquery.nivo.slider.js}>"></script>
 <script type="text/javascript">
-
       $(window).load(function() {
           $('#slider').nivoSlider();
     });
-
 </script>
