@@ -6,13 +6,13 @@ $theme_config[$i]['desc']    = WMNHI_TF_SHOW_VAR_DESC;
 $theme_config[$i]['type']    = "yesno";
 $theme_config[$i]['default'] = "0";
 
-//導覽列切換選項設定
-// $i++;
-// $theme_config[$i]['name']="navbar";
-// $theme_config[$i]['text']=WMNHI_NAVBAR;
-// $theme_config[$i]['desc']=WMNHI_NAVBAR_DESC;
-// $theme_config[$i]['type']="yesno";
-// $theme_config[$i]['default']="1";
+//字型設定
+$i++;
+$theme_config[$i]['name']    = "font_family";
+$theme_config[$i]['text']    = TF_FONT_FAMILY;
+$theme_config[$i]['desc']    = TF_FONT_FAMILY_DESC;
+$theme_config[$i]['type']    = "text";
+$theme_config[$i]['default'] = constant('TF_FONT_FAMILY_DEFAULT');
 
 //頁尾底圖
 $i++;

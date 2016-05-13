@@ -65,3 +65,6 @@ define('TF_RIGHT_SPARATE', 'Right separate line');
 define('TF_RIGHT_SPARATE_DESC', 'Display separate line between main content and right block zone?');
 define('TF_SPARATE_STYLE', 'Separate line style');
 define('TF_SPARATE_STYLE_DESC', 'Setup separate line style.');
+define('TF_FONT_FAMILY', 'Font family');
+define('TF_FONT_FAMILY_DEFAULT', '"Helvetica Neue", Helvetica, Arial, sans-serif');
+define('TF_FONT_FAMILY_DESC', 'CSS font-family setup, e.g.:' . TF_FONT_FAMILY_DEFAULT);
